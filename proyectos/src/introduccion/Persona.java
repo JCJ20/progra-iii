@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Persona {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-//        System.out.println("ingrese su nombre: ");
-//        String n = leer.nextLine();
-//
-//        System.out.print("hola " + n);
-//
-//        System.out.println("ingrese su edad");
-//        while (leer.hasNextInt()) {
-//            System.out.println("ingrese su edad");
-//            int e = leer.nextInt();
-//            System.out.println("tienes " + e);
-//        }
+        System.out.println("ingrese su nombre: ");
+        String n = leer.nextLine();
+
+        System.out.print("hola " + n);
+
+        System.out.println("ingrese su edad");
+        while (leer.hasNextInt()) {
+            System.out.println("ingrese su edad");
+            int e = leer.nextInt();
+            System.out.println("tienes " + e);
+        }
         //sumar las primeras 5 edades
 
         int c = 0;
