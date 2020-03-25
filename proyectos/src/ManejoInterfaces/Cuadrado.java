@@ -14,4 +14,8 @@ public class Cuadrado implements Figura {
     public Double getLado() {
         return lado;
     }
+
+    public Double Pi() {
+        return null;
+    }
 }
