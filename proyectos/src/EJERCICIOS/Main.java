@@ -16,7 +16,7 @@ public class Main {
 //        System.out.println("burbuja \n");
 //        e2.burbuja(A);
 
-        Gerente g = new Gerente("","",0,"");
+        Gerente g = new Gerente();
         g.Leer();
         g.Mostrar();
 

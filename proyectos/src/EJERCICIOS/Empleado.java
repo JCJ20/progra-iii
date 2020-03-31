@@ -1,19 +1,19 @@
 package EJERCICIOS;
 
 public class Empleado implements LeerInterface {
-    public String primerNombre;
-    public String primerApellido;
-    public int ciNumero;
-    public String ciExtencion;
+    private String primerNombre;
+    private String primerApellido;
+    private int ciNumero;
+    private String ciExtencion;
 
-    public Empleado(String primerNombre, String primerApellido, int ciNumero, String ciExtencion) {
-        this.primerNombre = primerNombre;
-        this.primerApellido = primerApellido;
-        this.ciNumero = ciNumero;
-        this.ciExtencion = ciExtencion;
+    public Empleado() {
+        this.primerNombre = "";
+        this.primerApellido = "";
+        this.ciNumero = 0;
+        this.ciExtencion = "";
     }
 
-    public void leer(String n){
+    public void leer(){
         System.out.println("Ingrese su primer nombre: ");
         this.primerNombre = LEER.nextLine();
         System.out.println("Ingrese su primer apellido: ");
