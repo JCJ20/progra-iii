@@ -4,6 +4,7 @@ public class Persona extends Ciudadano {
     public String etapaCrecimiento;
 
     public Persona() {
+        super();
         this.etapaCrecimiento = "";
     }
 

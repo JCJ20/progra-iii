@@ -3,18 +3,15 @@ package Hito_II;
 import ManejoInterfaces.Cuadrado;
 
 public class Policia extends Persona   {
-    public String turno;
-    public int nroDestinos;
-    public String [] destinos;
+    private String turno;
+    private int nroDestinos;
+    private String [] destinos;
 
     public Policia() {
+        super();
         this.turno = "";
         this.nroDestinos = 0;
-        this.destinos = new String[nroDestinos];
-
     }
-
-
 
     public void leer() {
         super.leer();
@@ -25,9 +22,9 @@ public class Policia extends Persona   {
 
         System.out.println("ingrese los"+nroDestinos+" destinos: ");
 
-        this.destinos = new String[nroDestinos];
+        this.destinos = new String[this.nroDestinos];
 
-        for(int i=0 ; i<destinos.length ; i++){
+        for(int i=0 ; i<this.nroDestinos ; i++){
             System.out.println("destino "+i+": ");
             String dest = LEER.next();
             destinos[i] = dest;
@@ -40,17 +37,21 @@ public class Policia extends Persona   {
         }
     }
 
-    public void mostrar() {
+    public void Mostrar(String c) {
         super.mostrar();
         System.out.println("turno: "+turno);
         System.out.println("numero de destinos: "+nroDestinos);
 
         System.out.println("destinos: ");
-        this.destinos = new String[nroDestinos];
+//        this.destinos = new String[this.nroDestinos];
 
-        for(int i=0 ; i<destinos.length ; i++){
+        for(int j=0 ; j<this.nroDestinos ; j++){
 
-            System.out.println("destino "+i+": "+this.destinos[i]);
+            System.out.println("destino "+j+": "+this.destinos[j]);
+            if(this.destinos[j].equals(c)){
+                System.out.println("coinciden : "+this.destinos[j]);
+
+            };
 
         }
 
