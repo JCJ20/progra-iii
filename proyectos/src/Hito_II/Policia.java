@@ -37,6 +37,10 @@ public class Policia extends Persona   {
         }
     }
 
+    public String[] getDestinos() {
+        return destinos;
+    }
+
     public void Mostrar(String c) {
         super.mostrar();
         System.out.println("turno: "+turno);
@@ -54,6 +58,7 @@ public class Policia extends Persona   {
             };
 
         }
+
 
     }
 }
