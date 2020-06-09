@@ -1,4 +1,4 @@
-package com.example.Corona_Virus;
+package com.example.Corona_Virus.View;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
