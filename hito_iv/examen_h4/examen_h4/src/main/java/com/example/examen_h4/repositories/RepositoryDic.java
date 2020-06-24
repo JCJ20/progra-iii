@@ -11,7 +11,7 @@ public interface RepositoryDic extends JpaRepository<TraductorModel, Integer> {
     public TraductorModel getWordTranslate(@Param("wordSelected") String wordSelected);
 
     //    SELECT * FROM diccionary WHERE word = 'LUNES' OR portugues = 'LUNES' or english = 'LUNES'
-    @Query(value = "SELECT * FROM diccionary WHERE word = 'LUNES'",
+    /*@Query(value = "SELECT * FROM diccionary WHERE word = 'LUNES'",
             nativeQuery = true)
-    public TraductorModel getAllTranslate(@Param("wordSelected") String wordSelected);
+    public TraductorModel getAllTranslate(@Param("wordSelected") String wordSelected);*/
 }
